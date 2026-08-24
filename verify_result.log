@@ -1,0 +1,64 @@
+=== 开始验证 2026-08-24T17:42:35Z ===
+=== 架构 ===
+x86_64
+=== node版本 ===
+v18.20.8
+=== npm版本 ===
+10.8.2
+=== 安装 @alipay/agent-payment@1.0.20 ===
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.0.2
+npm notice To update run: npm install -g npm@12.0.2
+npm notice
+=== CLI路径 ===
+CLI_PATH=/usr/local/share/npm-global/lib/node_modules/@alipay/agent-payment
+=== native目录内容 ===
+ls: cannot access '/usr/local/share/npm-global/lib/node_modules/@alipay/agent-payment/dist/native/': No such file or directory
+=== 加载blueshield.node ===
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module '/usr/local/share/npm-global/lib/node_modules/@alipay/agent-payment/dist/native/blueshield.node'
+Require stack:
+- /workspaces/OperitForge/[eval]
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at [eval]:1:9
+    at runScriptInThisContext (node:internal/vm:143:10)
+    at node:internal/process/execution:100:14
+    at [eval]-wrapper:6:24
+    at runScript (node:internal/process/execution:83:62)
+    at evalScript (node:internal/process/execution:114:10) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/workspaces/OperitForge/[eval]' ]
+}
+
+Node.js v18.20.8
+=== 加载apguard.node ===
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module '/usr/local/share/npm-global/lib/node_modules/@alipay/agent-payment/dist/native/apguard.node'
+Require stack:
+- /workspaces/OperitForge/[eval]
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at [eval]:1:9
+    at runScriptInThisContext (node:internal/vm:143:10)
+    at node:internal/process/execution:100:14
+    at [eval]-wrapper:6:24
+    at runScript (node:internal/process/execution:83:62)
+    at evalScript (node:internal/process/execution:114:10) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/workspaces/OperitForge/[eval]' ]
+}
+
+Node.js v18.20.8
+=== alipay-bot check-wallet ===
+timeout: failed to run command 'alipay-bot': No such file or directory
+=== 验证结束 2026-08-24T17:42:36Z ===
